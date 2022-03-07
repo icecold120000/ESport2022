@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.erreur {
+  color: red;
+  font-weight: bold;
+}
+
+table td {
+  vertical-align: middle;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
