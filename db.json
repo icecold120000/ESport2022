@@ -1,0 +1,19 @@
+{
+  "user" : [
+    {
+      "email" : "admin@gmail.com",
+      "password" : "admin",
+      "playCoins" : 100
+    },
+    {
+      "email" : "player1@gmail.com",
+      "password" : "player",
+      "playCoins" : 100
+    },
+    {
+      "email" : "player2@gmail.com",
+      "password" : "player",
+      "playCoins" : 100
+    }
+  ]
+}
