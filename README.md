@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Created by Quentin Pham
+Project to learn the basic of React
 
 ## Available Scripts
 
