@@ -1,19 +1,21 @@
 {
-  "user" : [
+  "user": [
     {
-      "email" : "admin@gmail.com",
-      "password" : "admin",
-      "playCoins" : 100
+      "email": "qej.pham@gmail.com",
+      "password": "admin",
+      "id": 1
     },
     {
-      "email" : "player1@gmail.com",
-      "password" : "player",
-      "playCoins" : 100
+      "email": "test@test.test",
+      "password": "test",
+      "playCoins": 100,
+      "id": 2
     },
     {
-      "email" : "player2@gmail.com",
-      "password" : "player",
-      "playCoins" : 100
+      "email": "fammar@nodevo.fr",
+      "password": "leleve",
+      "playCoins": 100,
+      "id": 3
     }
   ]
 }

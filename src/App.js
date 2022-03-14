@@ -17,6 +17,7 @@ import Player from "./components/Joueurs/Player";
 import Match from "./components/Matchs/Match";
 import Games from "./components/Jeux/Games";
 import Game from "./components/Jeux/Game";
+import Signup from "./components/Accueil/Signup";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Route path="/games" element={<Games/>}/>
                 <Route path="/games/:id" element={<Game />}/>
               <Route path="/login" element={<Login />}/>
+              <Route path={"/signup"} element={<Signup />}/>
               <Route path="*" element={<NoMatch />}/>
           </Routes>
       </div>

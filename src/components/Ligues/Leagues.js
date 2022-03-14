@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Table} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import {Token} from "../Utils/Token";
 
 export default class Leagues extends React.Component {
     constructor(props) {
@@ -11,13 +12,7 @@ export default class Leagues extends React.Component {
     }
 
     componentDidMount() {
-        const options = {
-            method: 'GET',
-            headers: {
-                Accept: 'application/json',
-                Authorization: 'Bearer UknIj0tPoeY_elDkp0ntkb0xpSJkLxgk8xrVABgpIpVT8T_ak_k'
-            }
-        };
+        const options = Token();
 
         fetch('https://api.pandascore.co/leagues?sort=&page=1&per_page=50', options)
             .then(response => response.json())

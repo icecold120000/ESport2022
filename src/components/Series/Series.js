@@ -1,25 +1,20 @@
 import React, { useState, useEffect }from "react";
 import {Button, Table} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import {Token} from "../Utils/Token";
 
 export default function Series() {
-    const [series, setSeries] = useState([])
+    const [series, setSeries] = useState([]);
 
     useEffect(()=> {
-        const options = {
-            method: 'GET',
-            headers: {
-                Accept: 'application/json',
-                Authorization: 'Bearer UknIj0tPoeY_elDkp0ntkb0xpSJkLxgk8xrVABgpIpVT8T_ak_k'
-            }
-        };
+        const options = Token();
 
         fetch('https://api.pandascore.co/series?sort=&page=1&per_page=50', options)
             .then(response => response.json())
             .then(data => {
                 setSeries(data)
             });
-    },[])
+    },[]);
 
     return(
         <>

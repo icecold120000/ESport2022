@@ -1,16 +1,21 @@
 import React from "react";
 import {Formik, Form, Field } from "formik";
 import {Button , Form as FormBootstrap} from "react-bootstrap";
-import axios from "axios";
+import {Link} from "react-router-dom";
+import axios from "../Utils/Axios";
 
 export default function Login() {
     return (
         <>
             <h1>Connexion</h1>
             <Formik initialValues={{email: '', password: ''}} onSubmit={(values) => {
-                axios.post('https://localhost:3000/user', {
-                    email: values.email,
-                    password: values.password
+                axios.get('/http://localhost:3001/user', {
+                    params: {
+                        email: values.email,
+                        password: values.password
+                    }
+                }).then(function (response) {
+                    console.log(response);
                 })
             }}>
                 {({
@@ -36,6 +41,11 @@ export default function Login() {
                     </Form>
                 )}
             </Formik>
+            <Link to={"/signup"}>
+                <Button>
+                    S'inscrire
+                </Button>
+            </Link>
         </>
     );
 
